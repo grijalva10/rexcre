@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rexcre *.css
+recursive-include rexcre *.csv
+recursive-include rexcre *.html
+recursive-include rexcre *.ico
+recursive-include rexcre *.js
+recursive-include rexcre *.json
+recursive-include rexcre *.md
+recursive-include rexcre *.png
+recursive-include rexcre *.py
+recursive-include rexcre *.svg
+recursive-include rexcre *.txt
+recursive-exclude rexcre *.pyc
