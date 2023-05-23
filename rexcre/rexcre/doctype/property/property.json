@@ -1,0 +1,440 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2023-05-17 10:33:27.030528",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "summary_tab",
+  "property_name",
+  "property_type",
+  "property_id",
+  "property_image",
+  "property_description",
+  "column_break_vhvb",
+  "star_rating",
+  "features",
+  "amenities",
+  "tenancy",
+  "for_sale_status",
+  "percent_leased",
+  "location_tab",
+  "property_address",
+  "city",
+  "state",
+  "zip",
+  "country",
+  "continent",
+  "subcontinent",
+  "column_break_jfmh",
+  "market_name",
+  "submarket_name",
+  "submarket_cluster",
+  "county_name",
+  "latitude",
+  "longitude",
+  "building_tab",
+  "building_class",
+  "building_status",
+  "total_available_space_sf",
+  "rent_sf_mo",
+  "year_built",
+  "parking_ratio",
+  "building_park",
+  "zoning",
+  "column_break_zrzx",
+  "construction_begin",
+  "construction_material",
+  "column_spacing",
+  "number_of_floors",
+  "number_of_elevators",
+  "number_of_parking_spaces",
+  "typical_floor_space",
+  "ceiling_height",
+  "sale_tab",
+  "for_sale_price",
+  "last_sale_date",
+  "last_sale_price",
+  "cap_rate",
+  "days_on_market",
+  "column_break_vian",
+  "leasing_tab",
+  "leasing_company_name",
+  "leasing_company_contact",
+  "column_break_mabr",
+  "direct_available_space",
+  "direct_vacant_space",
+  "avg_rent_direct_industrial",
+  "owner_tab",
+  "owner_name",
+  "owner_contact",
+  "owner_address",
+  "owner_city_state_zip",
+  "owner_phone",
+  "column_break_nkxx"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Data",
+   "label": "Property ID"
+  },
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "label": "Property Name"
+  },
+  {
+   "fieldname": "summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "property_description",
+   "fieldtype": "Text",
+   "label": "Description "
+  },
+  {
+   "fieldname": "features",
+   "fieldtype": "Data",
+   "label": "Features"
+  },
+  {
+   "fieldname": "amenities",
+   "fieldtype": "Data",
+   "label": "Amenities"
+  },
+  {
+   "fieldname": "star_rating",
+   "fieldtype": "Rating",
+   "label": "Star Rating"
+  },
+  {
+   "fieldname": "location_tab",
+   "fieldtype": "Tab Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "building_tab",
+   "fieldtype": "Tab Break",
+   "label": "Building"
+  },
+  {
+   "fieldname": "sale_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sale"
+  },
+  {
+   "fieldname": "leasing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Leasing"
+  },
+  {
+   "fieldname": "owner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "tenancy",
+   "fieldtype": "Select",
+   "label": "Tenancy "
+  },
+  {
+   "fieldname": "for_sale_status",
+   "fieldtype": "Select",
+   "label": "For Sale Status"
+  },
+  {
+   "fieldname": "percent_leased",
+   "fieldtype": "Float",
+   "label": "Percent Leased"
+  },
+  {
+   "fieldname": "column_break_vhvb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_address",
+   "fieldtype": "Data",
+   "label": "Property Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "label": "Zip"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "continent",
+   "fieldtype": "Data",
+   "label": "Continent"
+  },
+  {
+   "fieldname": "subcontinent",
+   "fieldtype": "Data",
+   "label": "Subcontinent"
+  },
+  {
+   "fieldname": "column_break_jfmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "market_name",
+   "fieldtype": "Data",
+   "label": "Market Name"
+  },
+  {
+   "fieldname": "submarket_name",
+   "fieldtype": "Data",
+   "label": "Submarket Name"
+  },
+  {
+   "fieldname": "submarket_cluster",
+   "fieldtype": "Data",
+   "label": "Submarket Cluster"
+  },
+  {
+   "fieldname": "county_name",
+   "fieldtype": "Data",
+   "label": "County Name"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "building_class",
+   "fieldtype": "Data",
+   "label": "Building Class"
+  },
+  {
+   "fieldname": "building_status",
+   "fieldtype": "Data",
+   "label": "Building Status"
+  },
+  {
+   "fieldname": "total_available_space_sf",
+   "fieldtype": "Int",
+   "label": "Total Available Space SF"
+  },
+  {
+   "fieldname": "rent_sf_mo",
+   "fieldtype": "Currency",
+   "label": "Rent SF Monthly"
+  },
+  {
+   "fieldname": "year_built",
+   "fieldtype": "Int",
+   "label": "Year Built"
+  },
+  {
+   "fieldname": "parking_ratio",
+   "fieldtype": "Float",
+   "label": "Parking Ratio"
+  },
+  {
+   "fieldname": "building_park",
+   "fieldtype": "Data",
+   "label": "Building Park"
+  },
+  {
+   "fieldname": "zoning",
+   "fieldtype": "Data",
+   "label": "Zoning"
+  },
+  {
+   "fieldname": "column_break_zrzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "construction_begin",
+   "fieldtype": "Date",
+   "label": "Construction Begin"
+  },
+  {
+   "fieldname": "construction_material",
+   "fieldtype": "Data",
+   "label": "Construction Material"
+  },
+  {
+   "fieldname": "column_spacing",
+   "fieldtype": "Float",
+   "label": "Column Spacing"
+  },
+  {
+   "fieldname": "number_of_floors",
+   "fieldtype": "Int",
+   "label": "Number of Floors"
+  },
+  {
+   "fieldname": "number_of_elevators",
+   "fieldtype": "Int",
+   "label": "Number of Elevators"
+  },
+  {
+   "fieldname": "number_of_parking_spaces",
+   "fieldtype": "Int",
+   "label": "Number of Parking Spaces"
+  },
+  {
+   "fieldname": "typical_floor_space",
+   "fieldtype": "Int",
+   "label": "Typical Floor Space"
+  },
+  {
+   "fieldname": "ceiling_height",
+   "fieldtype": "Float",
+   "label": "Ceiling Height"
+  },
+  {
+   "fieldname": "for_sale_price",
+   "fieldtype": "Currency",
+   "label": "For Sale Price"
+  },
+  {
+   "fieldname": "last_sale_date",
+   "fieldtype": "Date",
+   "label": "Last Sale Date"
+  },
+  {
+   "fieldname": "last_sale_price",
+   "fieldtype": "Currency",
+   "label": "Last Sale Price"
+  },
+  {
+   "fieldname": "cap_rate",
+   "fieldtype": "Float",
+   "label": "Cap Rate"
+  },
+  {
+   "fieldname": "days_on_market",
+   "fieldtype": "Int",
+   "label": "Days on Market"
+  },
+  {
+   "fieldname": "column_break_vian",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "leasing_company_name",
+   "fieldtype": "Link",
+   "label": "Leasing Company",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "leasing_company_contact",
+   "fieldtype": "Link",
+   "label": "Leasing Company Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_mabr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direct_available_space",
+   "fieldtype": "Int",
+   "label": "Direct Available Space"
+  },
+  {
+   "fieldname": "direct_vacant_space",
+   "fieldtype": "Int",
+   "label": "Direct Vacant Space"
+  },
+  {
+   "fieldname": "avg_rent_direct_industrial",
+   "fieldtype": "Int",
+   "label": "Avg Rent Direct Industrial"
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Link",
+   "label": "Owner Name",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "owner_contact",
+   "fieldtype": "Link",
+   "label": "Owner Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "owner_address",
+   "fieldtype": "Data",
+   "label": "Owner Address"
+  },
+  {
+   "fieldname": "owner_city_state_zip",
+   "fieldtype": "Data",
+   "label": "Owner City State Zip"
+  },
+  {
+   "fieldname": "owner_phone",
+   "fieldtype": "Data",
+   "label": "Owner Phone"
+  },
+  {
+   "fieldname": "column_break_nkxx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_image",
+   "fieldtype": "Attach Image",
+   "label": "Property Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-23 13:06:57.526234",
+ "modified_by": "Administrator",
+ "module": "RexCRE",
+ "name": "Property",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-23 11:46:36.164889",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "broker",
+  "email",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "broker",
+   "fieldtype": "Link",
+   "label": "Broker",
+   "options": "Broker"
+  },
+  {
+   "fetch_from": "broker.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "broker.phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-23 11:47:11.750762",
+ "modified_by": "Administrator",
+ "module": "RexCRE",
+ "name": "Broker Team Broker",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
