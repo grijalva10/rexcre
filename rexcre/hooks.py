@@ -202,3 +202,14 @@ doctype_list_js = {"Note" : "public/js/note_list.js",
 # auth_hooks = [
 #	"rexcre.auth.validate"
 # ]
+
+website_route_rules = [{'from_route': '/falcon/<path:app_path>', 'to_route': 'falcon'},]
+
+has_permission = {
+    "Raven Channel": "raven.permissions.channel_has_permission",
+    "Raven Channel Member": "raven.permissions.channel_member_has_permission",
+    "Raven Message": "raven.permissions.message_has_permission",
+}
+
+on_session_creation = "raven.api.user_availability.set_user_active"
+on_logout = "raven.api.user_availability.set_user_inactive"
